@@ -30,7 +30,7 @@ jobs:
 
       - name: Initialization environment
         env:
- sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+ 
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           DEBIAN_FRONTEND: noninteractive
